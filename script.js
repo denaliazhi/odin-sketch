@@ -21,7 +21,7 @@ while (keepAsking) {
 let squareWidth = GRID_SIZE / numSquares;
 
 // Load starter grid
-container.style.maxWidth = `${GRID_SIZE}px`;
+container.style.width = `${GRID_SIZE}px`;
 for (let i = 0; i < numSquares; i++) {
     for (let j = 0; j < numSquares; j++) {
         const square = document.createElement("div");
@@ -33,5 +33,8 @@ for (let i = 0; i < numSquares; i++) {
 
 // Track mouse over grid
 container.addEventListener("mouseover", (e) => {
-    e.target.style.backgroundColor = "black";
+    let red = Math.random() * 255;
+    let green = Math.random() * 255;
+    let blue = Math.random() * 255;
+    e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
 })

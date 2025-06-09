@@ -7,11 +7,9 @@
 .container {
     display: flex;
     flex-wrap: wrap;
+    border: solid black 1px;
 }
 
 .pixel {
-    border: solid black 1px;
-    height: 10px;
-    width: 10px;
-    background-color: pink;
+    border: solid rgb(196, 196, 196) 1px;
 }
